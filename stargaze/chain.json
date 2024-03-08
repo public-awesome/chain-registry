@@ -9,6 +9,9 @@
   "bech32_prefix": "stars",
   "daemon_name": "starsd",
   "node_home": "$HOME/.starsd",
+  "key_algos": [
+    "secp256k1"
+  ],
   "slip44": 118,
   "fees": {
     "fee_tokens": [
@@ -34,6 +37,17 @@
     "compatible_versions": [
       "v12.0.0"
     ],
+    "cosmos_sdk_version": "v0.45.16",
+    "consensus": {
+      "type": "cometbft",
+      "version": "v0.37.1"
+    },
+    "binaries": {
+      "linux/amd64": ".."
+    },
+    "cosmwasm_version": "v0.33.0",
+    "cosmwasm_enabled": true,
+    "ibc_go_version": "v4.4.2",
     "genesis": {
       "genesis_url": "https://raw.githubusercontent.com/public-awesome/mainnet/main/stargaze-1/genesis.tar.gz"
     },
@@ -45,7 +59,7 @@
           "v9.1.0",
           "v9.0.0"
         ],
-	"next_version_name": "v10"
+        "next_version_name": "v10"
       },
       {
         "name": "v10",
@@ -66,10 +80,23 @@
       },
       {
         "name": "v12",
+        "proposal": x,
+        "height": xxx,
         "recommended_version": "v12.0.0",
         "compatible_versions": [
           "v12.0.0"
         ],
+        "binaries": {
+          "linux/amd64": "FILL ME"
+        },
+        "cosmos_sdk_version": "v0.45.16",
+        "consensus": {
+          "type": "cometbft",
+          "version": "v0.37.1"
+        },
+        "cosmwasm_version": "v0.33.0",
+        "cosmwasm_enabled": true,
+        "ibc_go_version": "v4.4.2",
         "next_version_name": ""
       }
     ]
